@@ -1,0 +1,130 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+}
+.input-respuesta{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+    margin: auto;
+    font-size: 20px;
+    outline: none;
+    margin-top: 80px;
+    text-transform: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 30%;
+    margin: auto;
+    min-height: 40vh;
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.178);
+   
+}
+
+.container h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.container span{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+button{
+    background-color: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+.container a{
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+.resaltar{
+    color: rgb(0, 110, 255);
+    
+    
+}
+
+nav h2{
+    color: white;
+    margin-left: 20px;
+}
+
+td{
+    background-color: rgb(66, 66, 66);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.678);
+    padding-bottom: 5px;
+}
+.respuestas_correctas{
+    background-color: rgb(68, 173, 48);
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.678);
+    padding-bottom: 5px;
+}
+
+.respuestas_incorrectas{
+    background-color: rgb(212, 53, 53);
+    padding-left: 20px;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+    padding-bottom: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+input{
+    width: 100%;
+}
+.total_aciertos{
+    margin-top: 50px;
+}
+#menu{
+    color: white;
+}
+@media (max-width:700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        width: 90%;
+        margin: auto;
+        min-height: 40vh;
+        margin-top: 60px;
+       
+    }
+    
+}

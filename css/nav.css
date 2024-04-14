@@ -1,0 +1,161 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__natural{
+    margin-left: 2dvh;
+    color: white;
+    font-size: 27px;
+    margin-top: -20px;
+    
+}
+
+.nav{
+    display: flex;
+   
+    position: relative;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(31, 136, 235);
+    z-index: 100;
+
+}
+
+
+.nav__ul{
+    display: flex;
+}
+.nav__li{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.nav__li span{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+
+}
+.nav__li a{
+    color: white;
+    text-decoration: none;
+    padding: 18px;
+    transition: .3s all;
+}
+.nav__li a:hover{
+    cursor: pointer;
+    background-color: rgb(65, 114, 206);
+}
+.nav__ul__responsive{
+        display: none;
+        background-color: rgb(0, 44, 165);
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        height: 200vh;
+        z-index: 100;
+
+   
+}
+.nav .material-symbols-outlined{
+    display: none;
+}
+input{
+    display: none;
+}
+.simbolos{
+    color: white;
+}
+#menu{
+    display: none;
+}
+@media (max-width:700px){
+ 
+    .nav__natural{
+        color: white;
+        font-size: 25px;
+       
+        margin-top: 0px;
+    }
+    .nav__li a{
+        color: white;
+        padding: 12px;
+    }
+    .nav .material-symbols-outlined{
+        margin-right: 20px;
+        color: white;
+        transform: scale(1.4);
+        display: block;
+      
+    }
+    .nav__ul{
+        display: none;
+    }
+ 
+    .nav__ul__responsive{
+       
+        display: block;
+        background-color: rgb(0, 74, 143);
+        width: 550px;
+        position: fixed;
+        top: 60px;
+        height: 200vh;
+        z-index: 100;
+        right: -120%;
+        transition: all .5s;
+
+    }
+    
+    .nav__li__responsive{
+        display: flex;
+       margin-left: 25px;
+        
+        
+        
+    }
+    .nav__li__responsive a{
+       
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+        transition: .3s all;
+        
+    }
+    .nav__li__responsive a i{
+        margin-right: 10px;
+    }
+    .nav__li__responsive a:hover{
+        background-color: rgb(42, 114, 247);
+
+    }
+    label:hover{
+        cursor: pointer;
+    }
+    
+    .nav__ul__responsive li{
+        width: 100%;
+       
+    }
+
+    #check:checked ~ .nav__ul__responsive{
+        
+        right: 0px;
+    }
+    input{
+        display: none;
+    }
+
+  #menu{
+    display: block;
+    font-size: 32px;
+    
+  }
+
+}
