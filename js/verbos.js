@@ -105,13 +105,7 @@ function mostrarEstadisticas(){
 
     container.innerHTML+=`<span class="total_aciertos">${aciertos}/${respuestas_correctas.length}<span>`
     container.innerHTML+="<a href='adjetivos.html'><button>Siguiente</button></a>"
-    toastr.success(`hola ${nombre}! Se han subido los resultados al registro`,"Sistema",{
-        "progressBar": true,
-        "positionClass": "toast-bottom-right",
-        "timeOut": "5000",
-        "extendedTimeOut": "5000",
-        "closeButton": true
-    })
+    
 }
 
 
